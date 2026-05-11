@@ -1,0 +1,46 @@
+1-savol: Kruskal va Dijkstra. Prim va spt uchun boshni og'ritib o'tirmang. Asosiysi o'sha ikkitasi nazariyasi va shu graphlarni ishlashni qotiring, ma'nosini tushunib. Slayddagilarni ham ishlang, chunki biroz farq uchun ham adashib ketishingiz mumkin.
+
+2- savol:  DHCP DORA, DNS hierarchy, and URL→IP resolution
+
+Q2(a) DHCP DORA (50 marks):    Slides 3–11
+Q2(b) DNS hierarchy (20 marks): Slides 12–13
+Q2(c) URL→IP resolution (30):   Slides 14–17
+
+Q3(a) IPv6 address classes (50):       Slides 12–20
+Q3(b) IPv6 auto-config on boot (10):   Slide 25 (NDP/SLAAC) — thin, need LLM
+Q3(c) IPv6 tunnelling (15):            Slides 26–27
+Q3(d) EUI-64 (25):                     Slides 19, 21
+
+Q4(a) — QoS problems + queuing mechanisms (80 marks)
+────────────────────────────────────────────────────
+Read from: 6CS029_Lecture_4-_QoS.pptx (38 slides total)
+
+  Slide 4   — The Purpose of QoS
+              (why queuing exists: traffic > capacity → buffer → delay → drops)
+  Slide 5   — Prioritizing Traffic
+              (classify into multiple queues, the VoIP/Finance/Web diagram)
+  Slide 6   — Bandwidth, Congestion, Delay, Jitter
+              (aggregation, speed mismatch, LAN→WAN congestion points)
+  Slide 7   — Causes of Delay
+              (the 6-row table: code, packetisation, queuing, serialisation,
+               propagation, de-jitter — fixed vs variable)
+  Slide 8   — Packet Loss + playout delay buffer (compensates for jitter)
+  Slide 9   — Packet Loss continued — DSP interpolation when jitter exceeds buffer
+
+  Slide 16  — "Queuing Algorithms" section header
+  Slide 17  — FIFO  (one queue, no priority, packets in arrival order)
+  Slide 18  — WFQ   (Weighted Fair Queuing — flow-based, no tunnels/encryption)
+  Slide 19  — CBWFQ (Class-Based WFQ — user-defined classes, FIFO per class)
+  Slide 20  — LLQ   (Low Latency Queuing — strict priority for voice on top of CBWFQ)
+
+
+Q4(b) — Bandwidth calculation, TS-AV-BW formula (20 marks)
+──────────────────────────────────────────────────────────
+Read from: 6CS029_Lecture_2-_Network_Design.pptx (43 slides total)
+            (this is the "Characterising Network Traffic" deck —
+             same file, the title shows the older name on Slide 1)
+
+  Slide 21  — "What are the bandwidth requirements given this data usage"
+              The worked-example table with the formula:
+              BW = [Endpoints × (1 + Headroom%)] × Sim_Use% × BW_per_endpoint
+              then SUM across all endpoint types.
