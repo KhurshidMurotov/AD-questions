@@ -44,3 +44,19 @@ Read from: 6CS029_Lecture_2-_Network_Design.pptx (43 slides total)
               The worked-example table with the formula:
               BW = [Endpoints × (1 + Headroom%)] × Sim_Use% × BW_per_endpoint
               then SUM across all endpoint types.
+
+
+Q5(a) Collision avoidance in CSMA/CA wireless LANs (50 marks):
+   • CSMA/CA mechanism (RTS/CTS dialogue)    Slides 17–19
+   • Why CSMA/CA (half-duplex limitation)    Slide 18
+   • ACK + retransmission                    Slide 17
+   • Wireless link characteristics           Slide 16
+   • 802.11 MAC logic flowchart              Slide 20
+
+Q5(b) Mobility inside an enterprise wireless network (50 marks):
+   • BSS + ESS (direct hit)                  Slide 14
+   • Mobility transitions (no/BSS/ESS)       Slide 15
+   • Association process                     Slide 21
+   • Discover mode (passive/active)          Slide 22
+   • Reassociation + Disassociation          Slide 23
+   • Enterprise depth: CAPWAP + WLC          Slides 24–28
